@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or signup form</title>
+</head>
+<body>
+    <button>help</button>
+    <button type="submit">help2 </button>
+    <input type="submit" value="submit">
+    <form action="/action.php">
+        <!-- <input> By default its type is text -->
+       
+        <div>
+            <label>
+                username:
+                <input type="text" placeholder="username">
+            </label>
+        </div>
+
+        password:
+        <input type="password">
+       
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" id="email" placeholder="email">
+        </div>
+      
+        Color:
+        <input type="color">
+        <br>
+        Number:
+        <input type="number">
+        <br>
+        Date:
+        <input type="date">
+        <br>
+        Time:
+        <input type="time">
+        <br>
+        <button>submit</button>
+        <button type="submit">click </button>
+        <button type="reset">reset </button>
+        <button type="button">Button </button>
+
+        <input type="submit">
+        <input type="submit" value="submit">
+        <input type="submit" value="click me">
+    </form>
+
+    <hr>
+    <form action="/action.php">
+        <div>
+            <input type="checkbox" name="age" id="age" checked>
+            <label for="age">im 18+</label>
+
+        </div>
+
+        <div> 
+            choose your subjects:
+            <input type="checkbox" name="sub" id="1" value="math">
+            <label for="1">math</label>
+            <input type="checkbox" name="sub" id="2" value="english">
+            <label for="2">english</label>
+            <input type="checkbox" name="sub" id="3" value="hindi">
+            <label for="3">hindi</label>
+
+        </div>
+        <div>
+            <!--
+                It is by default checked so we must have  to select one.. and in apple value is not passed so in backend fruit = on shown instead of fruit=appple
+            -->
+            <input type="radio" name="fruit" id="apple" checked>
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">mango</label>
+            <input type="radio" name="fruit" id="banana" value="mango">
+            <label for="banana">banana</label>
+
+        </div>
+        <div>
+            choose your profession:
+            <select name="pro">
+                <option>Select your profession</option>
+                <option value="stu">student</option>
+                <option value="dev" selected>Developer</option>
+
+            </select>
+        </div>
+
+        <div>
+            <input type="range" name="vol" min="10" max="100" id="volume" step="10">
+            <label for="volume">choose volume</label>
+        </div>
+
+       
+        <div>
+           
+            <label for="feed">please provide your valueable feedback:</label>
+            <textarea name="feedback" id="feed" cols="30" rows="4" placeholder="Enter your feedback here"></textarea>
+        </div>
+        <button>submit</button>
+
+    </form>
+    <hr>
+    <h1>Registration Form</h1>
+    <form action="/action.php">
+        <div>
+            <input type="text" name="first_name" placeholder="First name">
+            <input type="text" name="last_name" placeholder="Last name">
+        </div>
+        <div>
+            <label for="gen">please select gender:</label>
+            <select name="gender" id="gen">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">other</option>
+            </select>
+        </div>
+        <div>
+            <label for="tick">do you agree to all terms of servide?</label>
+            <input type="checkbox" id="tick" name="agree" value="yes">
+            <label for="tick">  yes I, agree</label>
+          
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
